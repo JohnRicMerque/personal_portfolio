@@ -29,7 +29,11 @@ const HeroSection = () => {
                     Dedicated to learning and building valuable technology. 
                 </p>
                 <div className="div">
-                    <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-white via-green-500 to-blue-500 mr-4 bg-white hover:bg-slate-200 text-black'>Hire Me</button>
+                    <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-white via-green-500 to-blue-500 mr-4 bg-white hover:bg-slate-200 text-black'>
+                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 text-white">
+                            Hire Me
+                        </span>
+                    </button>
                     <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800
                     text-white border border-white mt-3'>Download CV</button>
                 </div>

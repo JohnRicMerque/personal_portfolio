@@ -8,7 +8,7 @@ const TAB_DATA = [
       title: "Skills",
       id: "skills",
       content: (
-        <ul>
+        <ul className='list-disc pl-4'>
             <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -19,7 +19,7 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-          <ul>
+          <ul className='list-disc pl-4'>
               <li>Polytechnic University of the Philippines</li>
               <li>Romblon State University - Laboratory Science High School</li>
           </ul>
@@ -29,7 +29,7 @@ const TAB_DATA = [
         title: "Certifications",
         id: "certifications",
         content: (
-          <ul>
+          <ul className='list-disc pl-4'>
               <li>Responsive Web Design</li>
               <li>JavaScript Data Structures and Algorithms</li>
               <li>Introduction to SQl</li>

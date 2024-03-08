@@ -32,7 +32,7 @@ const ProjectsSection = () => {
       <h2 className='text-center text-white text-4xl font-bold mt-4 mb-4'>
         My Projects
       </h2>
-      <div className='grid md:grid-cols-2 gap-8 md:gap-12'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
         {projectData.map((project) => (
             <ProjectCard 
               key={project.id} 

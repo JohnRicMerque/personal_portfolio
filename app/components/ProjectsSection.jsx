@@ -25,7 +25,7 @@ const projectData = [
     {
         id: 3,
         title: "Johnny Discord Bot",
-        description: "Discord chatbot that can tell jokes, trivias quotes, weather and answer personal questions.",
+        description: "Discord chatbot that can tell jokes, trivias quotes, personal details, and weather.",
         imgUrl: "/images/projects/johnny.png",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/JohnRicMerque/chat-bot-response-system",
@@ -39,6 +39,24 @@ const projectData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
         previewUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
+    },
+    {
+        id: 5,
+        title: "PUP Interactive Map",
+        description: "Interactive map of Polytechnic University of the Philippines Main Campus.",
+        imgUrl: "/images/projects/pupmap.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/JohnRicMerque/pup-interactive-map",
+        previewUrl: "https://pup-interactive-map.vercel.app/",
+    },
+    {
+        id: 6,
+        title: "Calculator",
+        description: "Calculator built using HTML, CSS, JavaScript.",
+        imgUrl: "/images/projects/calculator.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/JohnRicMerque/simple-calculator",
+        previewUrl: "https://simple-calculator-omega.vercel.app/",
     },
     
 ]
@@ -73,6 +91,11 @@ const ProjectsSection = () => {
             onClick={handleTagChange} 
             name="Mobile" 
             isSelected={tag === "Mobile"} 
+        />
+        <ProjectTag 
+            onClick={handleTagChange} 
+            name="Data" 
+            isSelected={tag === "Data"} 
         />
       </div>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>

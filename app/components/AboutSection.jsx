@@ -54,7 +54,7 @@ const AboutSection = () => {
             <Image src="/images/about-me.png" width={400} height={400}></Image>
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-                <p className='text-base lg:text-lg text-justify'>A Computer Engineering Student at Polytechnic University of the Philippinees aspiring to be a skilled developer or data engineer. Values deep work, atomic habits, fun and the passion for learning and building technology.</p> 
+                <p className='text-base lg:text-lg text-justify'>A Computer Engineering Student at Polytechnic University of the Philippines aspiring to be a skilled developer or data engineer. Values deep work, atomic habits, fun and the passion for learning and building technology.</p> 
                 
                 <div className="flex flex-row mt-8 justify-start">
                     <TabButton 

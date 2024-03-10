@@ -12,6 +12,7 @@ const projectData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/JohnRicMerque/covidRush",
         previewUrl: "https://covid-rush-gamma.vercel.app/",
+        techStack: ["HTML", "CSS", "JavaScript"],
     },
     {
         id: 2,
@@ -21,6 +22,7 @@ const projectData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/JohnRicMerque/space-shooter-game",
         previewUrl: "https://space-shooter-game-kappa.vercel.app/",
+        techStack: ["HTML", "CSS", "JavaScript"],
     },
     {
         id: 3,
@@ -30,6 +32,7 @@ const projectData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/JohnRicMerque/chat-bot-response-system",
         previewUrl: "https://www.youtube.com/watch?v=Wn4Hp2Q-8js",
+        techStack: ["Python"],
     },
     {
         id: 4,
@@ -39,6 +42,7 @@ const projectData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
         previewUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
+        techStack: ["Kotlin", "XML"],
     },
     {
         id: 5,
@@ -48,6 +52,7 @@ const projectData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/JohnRicMerque/pup-interactive-map",
         previewUrl: "https://pup-interactive-map.vercel.app/",
+        techStack: ["HTML", "CSS", "JavaScript"],
     },
     {
         id: 6,
@@ -57,6 +62,7 @@ const projectData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/JohnRicMerque/simple-calculator",
         previewUrl: "https://simple-calculator-omega.vercel.app/",
+        techStack: ["HTML", "CSS", "JavaScript"],
     },
     
 ]
@@ -73,7 +79,7 @@ const ProjectsSection = () => {
   
   return (
     <>
-      <h2 className='text-center text-white text-4xl font-bold mt-4 mb-4'>
+      <h2 className='text-center text-white text-4xl font-bold my-2'>
         My Projects
       </h2>
       <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>

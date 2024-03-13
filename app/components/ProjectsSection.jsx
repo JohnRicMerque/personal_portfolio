@@ -42,7 +42,7 @@ const projectData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
         previewUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
-        techStack: ["Kotlin", "XML"],
+        techStack: ["Kotlin", "XML", "Firebase"],
     },
     {
         id: 5,
@@ -79,10 +79,10 @@ const ProjectsSection = () => {
   
   return (
     <>
-      <h2 className='text-center text-white text-4xl font-bold my-2'>
+      <h2 className='text-center text-white text-2xl font-bold my-1'>
         My Projects
       </h2>
-      <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+      <div className='text-white flex flex-row justify-center items-center py-6 gap-2'>
         <ProjectTag 
             onClick={handleTagChange} 
             name="All" 
@@ -104,7 +104,7 @@ const ProjectsSection = () => {
             isSelected={tag === "Data"} 
         />
       </div>
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
+      <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10'>
         {filteredProjects.map((project) => (
             <ProjectCard 
               key={project.id} 

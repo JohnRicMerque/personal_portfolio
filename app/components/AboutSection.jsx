@@ -53,11 +53,11 @@ const AboutSection = () => {
   return (
     <section className='text-white'>
         <div className='md:grid md:grid-cols-12 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-            {/* <Image className='md:col-span-5' src="/images/about-me.png" width={350} height={350}></Image> */}
-            <Lottie className='md:col-span-4 w-52 h-52'  
+            <Image className='md:col-span-5' src="/images/about-me.png" width={300} height={300}></Image>
+            {/* <Lottie className='md:col-span-4 w-52 h-52'  
                       animationData={animationData}>
-            </Lottie>
-            <div className='md:col-span-8 mt-4 md:mt-0 text-left flex flex-col h-full'>
+            </Lottie> */}
+            <div className='md:col-span-7 mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg text-justify'>A Computer Engineering Student at Polytechnic University of the Philippines aspiring to be a skilled developer or data engineer. Values deep work, atomic habits, fun and the passion for learning and building technology.</p> 
                 

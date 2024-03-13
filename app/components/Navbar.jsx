@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100'>
         <div className='flex flex-wrap items-center justify-between mx-auto py-4 px-8'>
-          <Link href="/" className='text-xl md:text-3xl text-white font-semibold'>&lt;jmerque/&gt;</Link>
+          <Link href="/" className='text-xl md:text-3xl text-white font-semibold'>&lt;jR/&gt;</Link>
           <div className="mobile-menu block md:hidden">
             {
               !navbarOpen ?  (

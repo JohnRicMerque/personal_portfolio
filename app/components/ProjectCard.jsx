@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}) => {
   return (
-    <div className='rounded-xl maingroup'>
+    <div className='rounded-xl maingroup hover:shadow-lg transition duration-300 ease-in-out hover:-translate-y-1'>
       <div className='h-32 md:h-40 lg:h-40 rounded-t-xl relative group' style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover"}}>
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#121212] gap-4 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-90 transition-all duration-1000" data-aos="fade-up">
             <Link

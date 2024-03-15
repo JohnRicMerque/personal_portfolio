@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import animationData from "../assets/dev-animation.json"
+
 
 const variants = {
   default: { width: 0 },

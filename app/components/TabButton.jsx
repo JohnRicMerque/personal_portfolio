@@ -17,7 +17,6 @@ const buttonClasses = active? 'text-white' : 'text-[#ADB7BE]'
           animate={active? "active" : "default"}
           variants={variants} 
           className="h-1 bg-green-500 mt-1 mr-3">
-
         </motion.div>
     </button>
   )

@@ -1,6 +1,6 @@
 "use client";
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useTransition, useState} from 'react';
 import NavLink from  './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay'
@@ -26,6 +26,15 @@ const navLinks = [
 ]
 
 const Navbar = ({ setCurrentSection }) => {
+  const [ tab, setTab ] = useState("HeroSection")
+  const [ isPending, startTransition ] = useTransition()
+
+  const handleNavTabChange = (id) => {
+    startTransition(() => {
+        setTab(id);
+    });
+  }
+
   const handleClick = (sectionname) => {
     setCurrentSection(sectionname)
   }
@@ -60,7 +69,10 @@ const Navbar = ({ setCurrentSection }) => {
                       <NavLink
                         onClick={handleClick} 
                         title={link.title} 
-                        section={link.section}/>
+                        section={link.section}
+                        selectTab={() => handleNavTabChange(link.section)}
+                        active={tab === link.section}
+                      />
                     </divn>
                   ) )
                 }

@@ -5,10 +5,10 @@ import TabButton from './TabButton'
 import Lottie from "lottie-react"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs, faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, } from  "@fortawesome/free-brands-svg-icons"
+import { faJs, faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact } from  "@fortawesome/free-brands-svg-icons"
 
 library.add(
-  faJs,faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, 
+  faJs,faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact
 )
 const TAB_DATA = [
     {
@@ -16,26 +16,31 @@ const TAB_DATA = [
       id: "skills",
       content: (
         <div className='flex flex-col gap-8'>
-          <div className='bg-[#18191E] border border-[#33353F] p-4'>
-            <p className='text-sm mb-2'>Programming Languages</p>
+          <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out' >
+            <p className='text-sm mb-2 font-bold text-green-100'>Languages</p>
             <div className='grid md:grid-cols-8 gap-4'>
               <FontAwesomeIcon icon={faJs} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
               <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
               <FontAwesomeIcon icon={faJava} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
               <FontAwesomeIcon icon={faPhp} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-            </div>
-          </div>
-          <div className='bg-[#18191E] border border-[#33353F] p-4'>
-            <p className='text-sm mb-2'>Markup Languages</p>
-            <div className='grid md:grid-cols-8 gap-4'>
               <FontAwesomeIcon icon={faHtml5} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
               <FontAwesomeIcon icon={faCss3} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
+              <Image className="" src={"/images/kotlin.svg"} alt={"kotlin.svg"} width={50} height={50} />
             </div>
-           
           </div>
-          <div className='bg-[#18191E] border border-[#33353F] p-4'>
-            <p className='text-sm mb-2'>Other Tools</p>
+
+          <div className='bg-[#18191E] border border-[rgb(51,53,63)] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
+            <p className='text-sm mb-2 font-bold text-green-100'>Frameworks</p>
             <div className='grid md:grid-cols-8 gap-4'>
+              <Image className="dark:invert" src={"/images/nextjs.svg"} alt={"nextjs.svg"} width={50} height={50} />
+              <FontAwesomeIcon icon={faReact} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
+            </div>
+          </div>
+          
+          <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
+            <p className='text-sm mb-2 font-bold text-green-100'>Other Tools</p>
+            <div className='grid md:grid-cols-8 gap-4'>
+              <Image className="" src={"/images/firebase.svg"} alt={"firebase.svg"} width={50} height={50} />
               <FontAwesomeIcon icon={faGithub} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
               <FontAwesomeIcon icon={faFigma} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
             </div>

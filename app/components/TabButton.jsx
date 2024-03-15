@@ -15,8 +15,8 @@ const buttonClasses = active? 'text-white' : 'text-[#ADB7BE]'
         <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`} >{children}</p>
         <motion.div
           animate={active? "active" : "default"}
-          variants={variants} 
-          className="h-1 bg-green-500 mt-1 mr-3">
+          variants={variants}
+          className="h-1 bg-green-500 mt-1 mr-3 transition ease-in-out">
         </motion.div>
     </button>
   )

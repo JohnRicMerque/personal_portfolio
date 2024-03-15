@@ -6,9 +6,10 @@ import Lottie from "lottie-react"
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact } from  "@fortawesome/free-brands-svg-icons"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
 
 library.add(
-  faJs,faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact
+  faJs,faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact, faUser,
 )
 const TAB_DATA = [
     {
@@ -98,7 +99,8 @@ const AboutSection = () => {
             <div className="flex justify-center">
               <Image className='rounded-full' src="/images/about-me.png" width={300} height={300} />
             </div>
-            <h2 className='text-2xl font-bold text-white mb-4 text-center'>About Me</h2>
+            <h2 className='text-2xl font-bold text-white mb-4 text-center'> <FontAwesomeIcon icon={faUser} style={{color: "#ffffff", width:"20px", height:"20px"}}/> About Me</h2>
+            <p className='text-slate-300 text-xl font-semibold'> John Ric Merque | 21 </p>
             <p className='text-slate-300 text-sm lg:text-base text-justify'>A Computer Engineering Student at Polytechnic University of the Philippines aspiring to be a skilled developer or data engineer. Values deep work, atomic habits, fun and the passion for learning and building technology.</p>
           </div>
           <div className='mt-4 md:mt-0 text-left flex flex-col h-full md:col-span-8' >

@@ -31,7 +31,7 @@ const projectData = [
         title: "Johnny Discord Bot",
         description: "Discord chatbot tells jokes, trivias, quotes,and weather.",
         imgUrl: "/images/projects/johnny.png",
-        tag: ["All", "Mobile"],
+        tag: ["All", "Others"],
         gitUrl: "https://github.com/JohnRicMerque/chat-bot-response-system",
         previewUrl: "https://www.youtube.com/watch?v=Wn4Hp2Q-8js",
         techStack: ["Python"],
@@ -112,6 +112,11 @@ const ProjectsSection = () => {
             onClick={handleTagChange} 
             name="Data" 
             isSelected={tag === "Data"} 
+        />
+        <ProjectTag 
+            onClick={handleTagChange} 
+            name="Others" 
+            isSelected={tag === "Others"} 
         />
       </div>
       <ul ref={ref} className='grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10'>

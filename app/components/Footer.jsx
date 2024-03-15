@@ -3,16 +3,9 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='footer border border-t-[#33353F] border-l-transparent border-b-transparent border-r-transparent text-white z-20'>
-      <div className='container p-12 flex justify-between'>
-        <span>
-            <Link 
-            href="/" 
-            className='text-xl md:text-3xl text-white font-semibold'>
-                &lt;jR/&gt;
-            </Link>
-        </span>
-        <p className='text-slate-600'>@2024 All rights reserved</p>
+    <footer className='footer border bg-[#121212] border-t-[#33353F] border-l-transparent border-b-transparent border-r-transparent text-white mt-8 z-30'>
+      <div className='container py-2 px-4 flex justify-end'>
+        <p className='text-slate-600 text-xs'>@2024 All rights reserved</p>
       </div>
     </footer>
   )

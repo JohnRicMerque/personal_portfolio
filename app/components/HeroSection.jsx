@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 const HeroSection = () => {
   return (
-    <section className='lg:py-20 py-0 px-4 relative' > 
+    <section className='lg:py-20 py-0 lg:px-14 px-4 relative min-h-screen flex align-middle' > 
         <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-900 to-transparent rounded-full h-96 w-96 z-0 blur-lg absolute top-3/4 -right-96 transform -translate-x-1/2 -translate-y-1/2"></div>
 
         <div className="grid grid-cols-1 sm:grid-cols-12">

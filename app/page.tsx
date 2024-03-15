@@ -1,22 +1,17 @@
-import Image from "next/image";
-import HeroSection from "./components/HeroSection"
+"use client"
 import Navbar from "./components/Navbar"
-import AboutSection from "./components/AboutSection"
-import ProjectsSection from "./components/ProjectsSection"
-import EmailSection from  './components/EmailSection'
 import Footer from './components/Footer'
+import ContentSection from "./components/ContentSection"
+import React, { useState, useRef } from 'react';
 
 export default function Home() {
+  const [currentSection, setCurrentSection] = React.useState("HeroSection")
+
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]  overflow-x-hidden">
-      <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-8">
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <EmailSection />
-      </div>
+    <main className="flex min-h-screen flex-col bg-[#121212]  overflow-x-hidden overflow-y-hidden">
+      <Navbar setCurrentSection={setCurrentSection} />
+      <ContentSection section={currentSection} />
       <Footer />
     </main>
-  );
+  )
 }

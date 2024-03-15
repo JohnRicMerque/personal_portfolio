@@ -1,10 +1,11 @@
 import Link from "next/link";
 
-const NavLink = ({ href, title }) => {
+const NavLink = ({section, onClick, title }) => {
     return (
-        <Link href={href} className="block py-4 pl-3 pr-4 text-[#ADB&BE] text-lg rounded md:p-0 text-white hover:text-green-300">
+        <button className="block py-4 pl-3 pr-4 text-[#ADB&BE] text-base rounded md:p-0 text-white hover:text-green-300"
+          onClick={() => onClick(section)}>
           {title}
-        </Link>
+        </button>
     );
 };
 

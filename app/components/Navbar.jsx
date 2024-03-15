@@ -5,28 +5,36 @@ import NavLink from  './NavLink';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay'
 
+
 const navLinks = [
   {
+    title: "Home",
+    section: "HeroSection",
+  },
+  {
     title: "About",
-    path: "#about",
+    section: "AboutSection",
   },
   {
     title: "Projects",
-    path: "#projects",
+    section: "ProjectsSection",
   },
   {
     title: "Contact",
-    path: "#contact",
+    section: "ContactSection",
   }
 ]
 
-const Navbar = () => {
+const Navbar = ({ setCurrentSection }) => {
+  const handleClick = (sectionname) => {
+    setCurrentSection(sectionname)
+  }
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
     <nav className='fixed top-0 left-0 right-0 z-30 bg-[#121212] bg-opacity-100 border border-b-[#33353F] border-r-transparent border-t-transparent  border-l-transparent'>
-        <div className='flex flex-wrap items-center justify-between mx-auto py-4 px-8'>
-          <Link href="/" className='text-xl md:text-3xl text-white font-semibold'>&lt;jR/&gt;</Link>
+        <div className='flex flex-wrap items-center justify-between mx-auto py-2 px-8'>
+          <Link href="/" className='text-xl md:text-2xl text-white font-semibold'>&lt;jR/&gt;</Link>
           <div className="mobile-menu block md:hidden">
             {
               !navbarOpen ?  (
@@ -48,9 +56,12 @@ const Navbar = () => {
              <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
                 {
                   navLinks.map((link, index) => (
-                    <li key={index}>
-                        <NavLink href={link.path} title={link.title} />
-                    </li>
+                    <divn key={index}>
+                      <NavLink
+                        onClick={handleClick} 
+                        title={link.title} 
+                        section={link.section}/>
+                    </divn>
                   ) )
                 }
              </ul>

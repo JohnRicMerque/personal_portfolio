@@ -1,8 +1,9 @@
 import React from 'react'
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/solid';
 import Link from "next/link"
+import Image from 'next/image'
 
-const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl}) => {
+const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}) => {
   return (
     <div className='rounded-xl maingroup'>
       <div className='h-32 md:h-40 lg:h-40 rounded-t-xl relative group' style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover"}}>
@@ -20,7 +21,17 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl}) => {
         </div>
       </div>
       <div className="text-white hover: hover:text-green-200 rounded-b-xl bg-[#181818] py-3 px-4 min-h-20">
-        <h6 className='text-sm font-semibold mb-1'>{title}</h6>
+        <div className="flex justify-between">
+          <h6 className='text-sm font-semibold mb-1'>{title}</h6>
+          <div className="flex gap-1">
+            {techStack.map((technology, index) => (
+            // <p key={index}>
+            //   #{technology}
+            // </p>
+            <Image className='h-[15px]' src={`/images/icons/${technology}.png` } width={15} height={15}></Image>
+            ))}
+          </div>
+        </div>
         <p className='text-xs text-[#ADB7Be] justify-center align-middle'>{description}</p>
       </div>
     </div>

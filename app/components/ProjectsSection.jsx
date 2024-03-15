@@ -29,7 +29,7 @@ const projectData = [
     {
         id: 3,
         title: "Johnny Discord Bot",
-        description: "Discord chatbot that can tell jokes, trivias quotes, personal details, and weather.",
+        description: "Discord chatbot tells jokes, trivias, quotes,and weather.",
         imgUrl: "/images/projects/johnny.png",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/JohnRicMerque/chat-bot-response-system",
@@ -44,12 +44,12 @@ const projectData = [
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
         previewUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
-        techStack: ["Kotlin", "XML", "Firebase"],
+        techStack: ["Kotlin", "Firebase"],
     },
     {
         id: 5,
         title: "PUP Interactive Map",
-        description: "Interactive map of Polytechnic University of the Philippines Main Campus.",
+        description: "Interactive map of PUP Main Campus.",
         imgUrl: "/images/projects/pupmap.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/JohnRicMerque/pup-interactive-map",
@@ -130,6 +130,7 @@ const ProjectsSection = () => {
                 imgUrl={project.imgUrl}
                 gitUrl={project.gitUrl}
                 previewUrl={project.previewUrl}
+                techStack={project.techStack}
               />
             </motion.li>
         ))}

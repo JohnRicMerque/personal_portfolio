@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-[#121212]  overflow-x-hidden overflow-y-hidden">
       <Navbar setCurrentSection={setCurrentSection} />
       <ContentSection section={currentSection} />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   )
 }

@@ -94,7 +94,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className='text-white min-h-screen align-middle lg:px-14 px-4 grid place-items-center'>
-        <div className='md:grid md:grid-cols-12 gap-10 items-center py-4 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+        <div className='md:grid md:grid-cols-12 gap-10 items-center py-4 px-4 xl:gap-16 sm:py-10 xl:px-16'>
           <div className='flex flex-col justify-center w-full md:col-span-4 gap-4'>
             <div className="flex justify-center">
               <Image className='rounded-full' src="/images/about-me.png" width={300} height={300} />

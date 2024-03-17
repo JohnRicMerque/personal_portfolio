@@ -75,7 +75,7 @@ function Cube() {
         mesh.current.rotation.z += delta * 0.15
     })
 
-    const texture_1 = useLoader(TextureLoader, '/images/developerbox.png')
+    // const texture_1 = useLoader(TextureLoader, '/images/developerbox.png')
 
     return (
         <motion.mesh ref={mesh} rotation-x={mouse.y} rotation-y={mouse.x}>

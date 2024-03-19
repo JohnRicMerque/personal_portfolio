@@ -10,8 +10,8 @@ import Footer from  './Footer'
 
 const HeroSection = () => {
   return (
-    <section className='min-h-screen grid place-items-center'>
-        <div className='lg:py-20 py-0 lg:px-14 px-4 relative flex align-middle mt-8' >
+    <section className='min-h-screen grid place-items-center relative'>
+        <div className='lg:py-20 py-0 lg:px-14 px-4 flex align-middle mt-8' >
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-900 to-transparent rounded-full h-96 w-96 z-0 blur-lg absolute top-3/4 -right-96 transform -translate-x-1/2 -translate-y-1/2"></div>
             <div className="grid grid-cols-1 sm:grid-cols-12 place-items-center w-full">
         

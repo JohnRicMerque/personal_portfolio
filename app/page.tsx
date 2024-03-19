@@ -8,7 +8,7 @@ export default function Home() {
   const [currentSection, setCurrentSection] = React.useState("HeroSection")
 
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]  overflow-x-hidden overflow-y-hidden">
+    <main className="flex min-h-screen flex-col bg-[#121212] overflow-hidden">
       <Navbar setCurrentSection={setCurrentSection} />
       <ContentSection section={currentSection} />
       {/* <Footer /> */}

@@ -7,7 +7,6 @@ import { color, useMotionValue, useSpring } from 'framer-motion';
 import { motion } from 'framer-motion-3d'
 
 
-
 export default function index() {
 
     return (
@@ -51,15 +50,7 @@ function Cube() {
         const multiplier = 0.5;
         const x = (-0.5 + clientX / innerWidth) * multiplier;
         const y = (-0.5 + clientY / innerHeight) * multiplier;
-        
-        const deltaX = x - prevMousePos.current.x;
-        const deltaY = y - prevMousePos.current.y;
-    
-        prevMousePos.current.x = x;
-        prevMousePos.current.y = y;
-    
-        mouse.x.set(mouse.x.get() + deltaX);
-        mouse.y.set(mouse.y.get() + deltaY);
+
     }
 
     useEffect( () => {

@@ -16,44 +16,44 @@ const TAB_DATA = [
       title: "Skills",
       id: "skills",
       content: (
-        <div className='flex flex-col gap-8'>
+        <div className='flex flex-col gap-4'>
           <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out' >
             <p className='text-sm mb-2 font-bold text-green-100'>Languages</p>
             <div className='grid md:grid-cols-8 gap-4'>
-              <FontAwesomeIcon icon={faJs} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <FontAwesomeIcon icon={faJava} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <FontAwesomeIcon icon={faPhp} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <FontAwesomeIcon icon={faHtml5} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <FontAwesomeIcon icon={faCss3} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <Image className="" src={"/images/kotlin.svg"} alt={"kotlin.svg"} width={50} height={50} />
+              <FontAwesomeIcon icon={faJs} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <FontAwesomeIcon icon={faJava} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <FontAwesomeIcon icon={faPhp} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <FontAwesomeIcon icon={faHtml5} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <FontAwesomeIcon icon={faCss3} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <Image className="" src={"/images/kotlin.svg"} alt={"kotlin.svg"} width={40} height={40} />
             </div>
           </div>
 
           <div className='bg-[#18191E] border border-[rgb(51,53,63)] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
             <p className='text-sm mb-2 font-bold text-green-100'>Web Frameworks</p>
             <div className='grid md:grid-cols-8 gap-4'>
-              <Image className="dark:invert" src={"/images/nextjs.svg"} alt={"nextjs.svg"} width={50} height={50} />
-              <FontAwesomeIcon icon={faReact} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <Image className="" src={"/images/tailwindcss.svg"} alt={"tailwind.svg"} width={50} height={50} />
+              <Image className="dark:invert" src={"/images/nextjs.svg"} alt={"nextjs.svg"} width={40} height={40} />
+              <FontAwesomeIcon icon={faReact} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <Image className="" src={"/images/tailwindcss.svg"} alt={"tailwind.svg"} width={40} height={40} />
             </div>
           </div>
           
           <div className='bg-[#18191E] border border-[rgb(51,53,63)] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
             <p className='text-sm mb-2 font-bold text-green-100'>Data</p>
             <div className='grid md:grid-cols-8 gap-4'>
-              <Image className="" src={"/images/sql.png"} alt={"sql.png"} width={50} height={50} />
-              <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <Image className="" src={"/images/postgresql.svg"} alt={"postgresql.svg"} width={50} height={50} />
+              <Image className="" src={"/images/sql.png"} alt={"sql.png"} width={40} height={40} />
+              <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <Image className="" src={"/images/postgresql.svg"} alt={"postgresql.svg"} width={40} height={40} />
             </div>
           </div>
           
           <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
             <p className='text-sm mb-2 font-bold text-green-100'>Other Tools</p>
             <div className='grid md:grid-cols-8 gap-4'>
-              <Image className="" src={"/images/firebase.svg"} alt={"firebase.svg"} width={50} height={50} />
-              <FontAwesomeIcon icon={faGithub} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
-              <FontAwesomeIcon icon={faFigma} style={{color: "#ffffff", width:"50px", height:"50px"}}/>
+              <Image className="" src={"/images/firebase.svg"} alt={"firebase.svg"} width={50} height={40} />
+              <FontAwesomeIcon icon={faGithub} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
+              <FontAwesomeIcon icon={faFigma} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-          <ul className='list-disc pl-4'>
+          <ul className='list-disc'>
               <li>Polytechnic University of the Philippines</li>
               <li>Romblon State University - Laboratory Science High School</li>
           </ul>
@@ -73,7 +73,7 @@ const TAB_DATA = [
         title: "Experience",
         id: "experience",
         content: (
-          <ul className='list-disc pl-4'>
+          <ul className='list-disc'>
               <li>Responsive Web Design</li>
               <li>JavaScript Data Structures and Algorithms</li>
               <li>Introduction to SQl</li>
@@ -93,18 +93,23 @@ const AboutSection = () => {
   }
 
   return (
-    <section id="about" className='text-white min-h-screen align-middle lg:px-14 px-4 grid place-items-center'>
-        <div className='md:grid md:grid-cols-12 gap-10 items-center py-4 px-4 xl:gap-16 sm:py-10 xl:px-16'>
-          <div className='flex flex-col justify-center w-full md:col-span-4 gap-4'>
+    <section id="about" className='text-white align-middle lg:px-14 px-4 grid place-items-center'>
+        <div className='md:grid md:grid-cols-12 gap-10 py-4 px-4 xl:gap-16 sm:py-10 xl:px-16 min-h-screen items-center'>
+          <div className=' mt-12 flex flex-col justify-center w-full md:col-span-4 gap-4'>
             <div className="flex justify-center">
-              <Image className='rounded-full' src="/images/about-me.png" width={300} height={300} />
+              <Image className='rounded-full ' src="/images/about-me.png" width={250} height={250} />
             </div>
-            <h2 className='text-2xl font-bold text-white mb-4 text-center'> <FontAwesomeIcon icon={faUser} style={{color: "#ffffff", width:"20px", height:"20px"}}/> About Me</h2>
-            <p className='text-slate-300 text-xl font-semibold'> John Ric Merque | 21 </p>
-            <p className='text-slate-300 text-sm lg:text-base text-justify'>A Computer Engineering Student at Polytechnic University of the Philippines aspiring to be a skilled developer or data engineer. Values deep work, atomic habits, fun and the passion for learning and building technology.</p>
+            <div className='mb-4 flex justify-center items-center gap-1'>
+              <FontAwesomeIcon icon={faUser} style={{color: "#ffffff", width:"20px", height:"20px"}}/>
+              <h2 className='text-xl font-bold text-white text-center'>  About Me</h2>
+            </div>
+            <p className='text-green-300 text-base font-semibold'> John Ric Merque | 21 </p>
+            <p className='text-slate-300 text-sm lg:text-sm text-justify'>A Computer Engineering Student at Polytechnic University of the Philippines aspiring to be a skilled developer or data engineer. </p>
+            
+            <p className='text-slate-300 text-sm lg:text-sm text-justify'>I value deep work, atomic habits, having fun and the passion for learning and building technology with colleagues.</p>
           </div>
-          <div className='mt-4 md:mt-0 text-left flex flex-col h-full md:col-span-8' >
-              <div className="flex flex-row mt-8 justify-start">
+          <div className='mt-4 md:mt-0 text-left flex flex-col md:col-span-8' >
+              <div className="flex flex-row mt-8">
                   <TabButton 
                   selectTab={() => handleTabChange("skills")}
                   active={tab === "skills"}
@@ -126,7 +131,7 @@ const AboutSection = () => {
                       {" "}Experience{" "}
                   </TabButton>
               </div>
-              <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
+              <div className="mt-4">{TAB_DATA.find((t) => t.id === tab).content}</div>
           </div>
         </div>
     </section>

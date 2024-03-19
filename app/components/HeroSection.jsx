@@ -37,7 +37,7 @@ const HeroSection = () => {
                   animate={{opacity: 1}}
                   transition={{duration: 0.3}}
                   className="col-span-8 place-self-center sm:text-left justify-self-start">
-                    <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold"><span className="text-transparent bg-clip-text bg-gradient-to-br from-green-500 to-green-300">Hi, I'm{""}</span>
+                    <h1 className="text-white mb-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold"><span className="text-transparent bg-clip-text bg-gradient-to-br from-green-500 to-green-300">Hi, I'm{""}</span>
                     <br />
                     <TypeAnimation
                         sequence={[
@@ -54,10 +54,10 @@ const HeroSection = () => {
                         repeat={Infinity}
                     />
                     </h1>
-                    <p className="text-[#ADB7BE] text-sm sm:text-base mb-6 lg:text-xl">
+                    <p className="text-[#ADB7BE] text-sm sm:text-base mb-4 lg:text-xl">
                         I enjoy learning and building valuable technology.
                     </p>
-                    <div className="div">
+                    <div className="">
                         <button className='px-1 py-1 w-full sm:w-fit rounded-2xl bg-gradient-to-br from-white via-green-500 to-green-100 mr-4 bg-white hover:bg-slate-200 text-black hover:translate-y-0.5 transition ease-in-out'>
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-xl px-5 py-2 text-white transition ease-in-out">
                                 Hire Me

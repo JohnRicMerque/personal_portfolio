@@ -66,6 +66,16 @@ const projectData = [
         previewUrl: "https://simple-calculator-omega.vercel.app/",
         techStack: ["HTML", "CSS", "JavaScript"],
     },
+    {
+      id: 7,
+      title: "Portfolio",
+      description: "My personal portfolio website.",
+      imgUrl: "/images/projects/portfolio.png",
+      tag: ["All", "Web"],
+      gitUrl: "https://github.com/JohnRicMerque/personal_portfolio",
+      previewUrl: "./",
+      techStack: ["NextJs", "TailwindCSS", "TypeScript"],
+  },
     
 ]
 

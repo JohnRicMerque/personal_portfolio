@@ -28,7 +28,10 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}
             // <p key={index}>
             //   #{technology}
             // </p>
-            <Image className='h-[15px]' src={`/images/icons/${technology}.png` } width={15} height={15}></Image>
+            
+            <div key={index}>
+              <Image className='h-[15px]' src={`/images/icons/${technology}.png` } width={15} height={15} alt={technology}></Image>
+            </div>
             ))}
           </div>
         </div>

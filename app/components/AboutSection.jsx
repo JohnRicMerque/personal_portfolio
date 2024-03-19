@@ -100,7 +100,7 @@ const AboutSection = () => {
         <div className='md:grid md:grid-cols-12 gap-10 py-4 px-4 xl:gap-16 sm:py-10 xl:px-16 min-h-screen items-center'>
           <div className=' mt-12 flex flex-col justify-center w-full md:col-span-4 gap-4'>
             <div className="flex justify-center">
-              <Image className='rounded-full ' src="/images/about-me.png" width={250} height={250} />
+              <Image className='rounded-full ' src="/images/about-me.png" width={250} height={250} alt='Profile Picture'/>
             </div>
             <div className='mb-4 flex justify-center items-center gap-1'>
               <FontAwesomeIcon icon={faUser} style={{color: "#ffffff", width:"20px", height:"20px"}}/>

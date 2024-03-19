@@ -10,7 +10,7 @@ const Experience = () => {
             <div className='border-l-2 pl-4'>
                 <p className='text-xs'>
                 Internship Activities </p>
-                <ul className='text-xs ml-4 text-slate-400 list-disc'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>Making sure the company's application GoWizApp bahaves as expected</li>
                     <li>Creating Test Cases</li>
                     <li>Doing Regression, Smoke, and Manual Testing for Mobile and Web Applications</li>

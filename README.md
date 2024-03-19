@@ -37,7 +37,7 @@ My personal portfolio website serves as a digital showcase of my skills, project
 
 To explore my portfolio website:
 
-1. Visit [My Portfolio Website](https://www.example.com).
+1. Visit [My Portfolio Website](https://personal-portfolio-fdgv-gx6e88xh2-johnricmerques-projects.vercel.app/).
 2. Browse through various sections including Home, About, Projects, and Contacts.
 3. Feel free to reach out to me through the contact platforms I provided.
 

@@ -40,9 +40,6 @@ const Education = () => {
         <p className='text-xs text-slate-500'>STEM, Senior High School</p>
         <div className='pl-4 pt-2'>
         <div className='border-l-2 pl-4'>
-                <p className='text-xs'>
-                Grade 12
-                </p>
                 <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 1st in Class during Grade 11</li>
@@ -58,9 +55,6 @@ const Education = () => {
         <p className='text-xs text-slate-500'>STEP, Junior High School</p>
         <div className='pl-4 pt-2'>
         <div className='border-l-2 pl-4'>
-                <p className='text-xs'>
-                Grade 10
-                </p>
                 <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 1st in Class during Grades, 7, 8, 9</li>

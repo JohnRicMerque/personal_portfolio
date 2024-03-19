@@ -7,6 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact } from  "@fortawesome/free-brands-svg-icons"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
+import Education from './Education'
 
 library.add(
   faJs,faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact, faUser,
@@ -18,7 +19,7 @@ const TAB_DATA = [
       content: (
         <div className='flex flex-col gap-4'>
           <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out' >
-            <p className='text-sm mb-2 font-bold text-green-100'>Languages</p>
+            <p className='text-sm mb-2 text-slate-300'>Languages</p>
             <div className='grid md:grid-cols-8 gap-4'>
               <FontAwesomeIcon icon={faJs} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
               <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
@@ -31,7 +32,7 @@ const TAB_DATA = [
           </div>
 
           <div className='bg-[#18191E] border border-[rgb(51,53,63)] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
-            <p className='text-sm mb-2 font-bold text-green-100'>Web Frameworks</p>
+            <p className='text-sm mb-2 text-slate-300'>Web Frameworks</p>
             <div className='grid md:grid-cols-8 gap-4'>
               <Image className="dark:invert" src={"/images/nextjs.svg"} alt={"nextjs.svg"} width={40} height={40} />
               <FontAwesomeIcon icon={faReact} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
@@ -40,7 +41,7 @@ const TAB_DATA = [
           </div>
           
           <div className='bg-[#18191E] border border-[rgb(51,53,63)] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
-            <p className='text-sm mb-2 font-bold text-green-100'>Data</p>
+            <p className='text-sm mb-2 text-slate-300'>Data</p>
             <div className='grid md:grid-cols-8 gap-4'>
               <Image className="" src={"/images/sql.png"} alt={"sql.png"} width={40} height={40} />
               <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
@@ -49,7 +50,7 @@ const TAB_DATA = [
           </div>
           
           <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
-            <p className='text-sm mb-2 font-bold text-green-100'>Other Tools</p>
+            <p className='text-sm mb-2 text-slate-300'>Other Tools</p>
             <div className='grid md:grid-cols-8 gap-4'>
               <Image className="" src={"/images/firebase.svg"} alt={"firebase.svg"} width={50} height={40} />
               <FontAwesomeIcon icon={faGithub} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
@@ -63,21 +64,14 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-          <ul className='list-disc'>
-              <li>Polytechnic University of the Philippines</li>
-              <li>Romblon State University - Laboratory Science High School</li>
-          </ul>
+           <Education />
         )
       },
       {
         title: "Experience",
         id: "experience",
         content: (
-          <ul className='list-disc'>
-              <li>Responsive Web Design</li>
-              <li>JavaScript Data Structures and Algorithms</li>
-              <li>Introduction to SQl</li>
-          </ul>
+        <></>
         )
       },
       {
@@ -116,37 +110,36 @@ const AboutSection = () => {
             
             <p className='text-slate-300 text-sm lg:text-sm text-justify'>I value deep work, atomic habits, having fun and the passion for learning and building technology with colleagues.</p>
           </div>
-          <div className='mt-4 md:mt-0 text-left flex flex-col md:col-span-8' >
-              <div className="flex flex-row gap-4 mt-8">
-                  <TabButton 
-                  selectTab={() => handleTabChange("skills")}
-                  active={tab === "skills"}
-                  >
-                      {" "}Skills{" "}
-                  </TabButton>
-
-                  <TabButton 
-                  selectTab={() => handleTabChange("education")}
-                  active={tab === "education"}
-                  >
-                      {" "}Education{" "}
-                  </TabButton>
-
-                  <TabButton 
-                  selectTab={() => handleTabChange("experience")}
-                  active={tab === "experience"}
-                  >
-                      {" "}Experience{" "}
-                  </TabButton>
-
-                  <TabButton 
-                  selectTab={() => handleTabChange("interests")}
-                  active={tab === "interests"}
-                  >
-                      {" "}Interests{" "}
-                  </TabButton>
-              </div>
-              <div className="mt-4">{TAB_DATA.find((t) => t.id === tab).content}</div>
+          <div className='h-full mt-4 md:mt-0 text-left flex justify-start flex-col md:col-span-8' >
+                <div className='h-full flex flex-col '>
+                  <div className="flex flex-row gap-4 mt-8">
+                      <TabButton
+                      selectTab={() => handleTabChange("skills")}
+                      active={tab === "skills"}
+                      >
+                          {" "}Skills{" "}
+                      </TabButton>
+                      <TabButton
+                      selectTab={() => handleTabChange("education")}
+                      active={tab === "education"}
+                      >
+                          {" "}Education{" "}
+                      </TabButton>
+                      <TabButton
+                      selectTab={() => handleTabChange("experience")}
+                      active={tab === "experience"}
+                      >
+                          {" "}Experience{" "}
+                      </TabButton>
+                      <TabButton
+                      selectTab={() => handleTabChange("interests")}
+                      active={tab === "interests"}
+                      >
+                          {" "}Interests{" "}
+                      </TabButton>
+                  </div>
+                  <div className="mt-4">{TAB_DATA.find((t) => t.id === tab).content}</div>
+                </div>
           </div>
         </div>
     </section>

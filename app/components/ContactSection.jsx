@@ -74,7 +74,7 @@ const EmailSection = () => {
         </div>
         <div className='z-10 mt-8'>
             <h5 className='text-xl font-bold text-green-300 my-2'>Let's connect !</h5>
-            <p className='text-[#ADB7BE] mb-4 max-w-lg text-sm text-justify'>
+            <p className='text-[#ADB7BE] mb-4 max-w-xl text-sm text-justify'>
                 {" "}
                 Hey there! 👋 I'm passionate about software development and data engineering, and I'm all in for opportunities or fun project collaborations! Whether you have a wild idea you've been itching to bring to life or you're looking for someone to streamline processes with cutting-edge technology, count me in! Let's connect our skills, brainstorm some exciting concepts, and turn them into reality together. <br />  <br />Drop me a message, and let's make magic happen! 🚀💻✨
             </p>

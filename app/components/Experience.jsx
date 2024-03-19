@@ -3,7 +3,7 @@ import React from 'react'
 const Experience = () => {
   return (
     <div className='max-h-96 relative gap-4 grid grid-cols-2'>
-      <div className='col-span-2 sticky top-0 p-4 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
+      <div className='col-span-2 p-10 sticky top-0 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
         <p className='text-sm'>Quality Assurance Intern</p>
         <p className='text-xs text-slate-500'>Wizy Software Labs, Inc.</p>
         <div className='pl-4 pt-2'>

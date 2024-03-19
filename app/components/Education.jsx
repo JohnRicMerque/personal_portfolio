@@ -17,7 +17,7 @@ const Education = () => {
                 <p className='text-xs'>
                 2nd Year
                 </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>President's Lister, GWA: 1.30</li>
                 </ul>
 
@@ -25,7 +25,7 @@ const Education = () => {
             <div className='border-l-2 pl-4'>
                 <p className='text-xs'>
                 1st Year </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>President's Lister, GWA: 1.12</li>
                     <li>Ranked 4th as top performing student in Computer Engineering Department</li>
                 </ul>
@@ -43,7 +43,7 @@ const Education = () => {
                 <p className='text-xs'>
                 Grade 12
                 </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 2nd in Class</li>
                 </ul>
@@ -52,7 +52,7 @@ const Education = () => {
                 <p className='text-xs'>
                 Grade 11
                 </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 1st in Class</li>
                 </ul>
@@ -70,7 +70,7 @@ const Education = () => {
                 <p className='text-xs'>
                 Grade 10
                 </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 2nd in Class</li>
                 </ul>
@@ -79,7 +79,7 @@ const Education = () => {
                 <p className='text-xs'>
                 Grade 9
                 </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 1st in Class</li>
                 </ul>
@@ -88,7 +88,7 @@ const Education = () => {
                 <p className='text-xs'>
                 Grade 8
                 </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 1st in Class</li>
                 </ul>
@@ -97,7 +97,7 @@ const Education = () => {
             <div className='border-l-2 pl-4'>
                 <p className='text-xs'>
                 Grade 7 </p>
-                <ul className='text-xs ml-2 text-slate-600'>
+                <ul className='text-xs ml-2 text-slate-400'>
                     <li>With High Honors</li>
                     <li>Ranked 1st in Class</li>
                 </ul>

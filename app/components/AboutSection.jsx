@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact } from  "@fortawesome/free-brands-svg-icons"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 import Education from './Education'
+import Experience from './Experience'
 
 library.add(
   faJs,faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact, faUser,
@@ -71,7 +72,7 @@ const TAB_DATA = [
         title: "Experience",
         id: "experience",
         content: (
-        <></>
+          <Experience />
         )
       },
       {

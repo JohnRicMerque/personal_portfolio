@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}) => {
   return (
-    <div className='rounded-xl maingroup hover:shadow-lg transition duration-300 ease-in-out hover:-translate-y-1'>
-      <div className='h-32 md:h-40 lg:h-40 rounded-t-xl relative group' style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover"}}>
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#121212] gap-4 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-90 transition-all duration-1000" data-aos="fade-up">
+    <div className='maingroup hover:shadow-lg transition duration-300 ease-in-out hover:-translate-y-1 border border-[#121212]'>
+      <div className='h-32 md:h-40 relative group ' style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover"}}>
+        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#121212] gap-4 bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-90 transition-all duration-1000">
             <Link
               href={gitUrl} 
               className='h-9 w-9 border-2 relative rounded-xl border-[#ADB7BE] hover:border-white group/link'>
@@ -20,7 +20,7 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}
             </Link>
         </div>
       </div>
-      <div className="text-white hover: hover:text-green-200 rounded-b-xl bg-[#181818] py-3 px-4 min-h-20">
+      <div className="text-white hover: hover:text-green-200 bg-[#181818] py-3 px-4 min-h-20">
         <div className="flex justify-between">
           <h6 className='text-sm font-semibold mb-1'>{title}</h6>
           <div className="flex gap-1">

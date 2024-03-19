@@ -79,7 +79,15 @@ const TAB_DATA = [
               <li>Introduction to SQl</li>
           </ul>
         )
-      }
+      },
+      {
+        title: "Interests",
+        id: "interests",
+        content: (
+          <ul className='list-disc'>
+          </ul>
+        )
+      },
 ]
 
 const AboutSection = () => {
@@ -109,7 +117,7 @@ const AboutSection = () => {
             <p className='text-slate-300 text-sm lg:text-sm text-justify'>I value deep work, atomic habits, having fun and the passion for learning and building technology with colleagues.</p>
           </div>
           <div className='mt-4 md:mt-0 text-left flex flex-col md:col-span-8' >
-              <div className="flex flex-row mt-8">
+              <div className="flex flex-row gap-4 mt-8">
                   <TabButton 
                   selectTab={() => handleTabChange("skills")}
                   active={tab === "skills"}
@@ -129,6 +137,13 @@ const AboutSection = () => {
                   active={tab === "experience"}
                   >
                       {" "}Experience{" "}
+                  </TabButton>
+
+                  <TabButton 
+                  selectTab={() => handleTabChange("interests")}
+                  active={tab === "interests"}
+                  >
+                      {" "}Interests{" "}
                   </TabButton>
               </div>
               <div className="mt-4">{TAB_DATA.find((t) => t.id === tab).content}</div>

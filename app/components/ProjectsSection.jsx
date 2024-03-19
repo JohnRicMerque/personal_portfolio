@@ -88,9 +88,9 @@ const ProjectsSection = () => {
   }
   
   return (
-    <section id='projects' className='lg:px-14 px-4 py-10 min-h-screen'>
+    <section id='projects' className='lg:px-14 px-4 min-h-screen'>
 
-      <div className='text-white flex flex-row justify-center items-center py-6 gap-2'>
+      <div className='text-white flex flex-row justify-center items-center mt-10 py-6 gap-2'>
         <ProjectTag 
             onClick={handleTagChange} 
             name="All" 
@@ -117,7 +117,7 @@ const ProjectsSection = () => {
             isSelected={tag === "Others"} 
         />
       </div>
-      <ul ref={ref} className='grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10'>
+      <ul ref={ref} className='grid grid-cols-2 lg:grid-cols-4'>
         {filteredProjects.map((project, index) => (
             <motion.li
               key={index} 

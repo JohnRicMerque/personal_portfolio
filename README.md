@@ -16,13 +16,13 @@ My personal portfolio website serves as a digital showcase of my skills, project
 ### 2. About
 - **Introduction**: A brief overview of who I am, my background, skills, and interests.
 - **Skills**: List of my technical skills to provide visitors with a comprehensive understanding of my capabilities.
-- **Education**: List of educational institution with accomplishments
+- **Education**: List of educational institutions affiliated with including academic accomplishments
 - **Experience**:  Work history including roles, responsibilities, achievements, and impact on projects/organizations.
-- **Interest**: Perosnal hobbies and things that I like.
+- **Interest**: Interests, hobbies and things that I like to showcase myself as a person.
 
 ### 3. Projects
 - **Projects**: Showcase of my past projects with detailed descriptions, images, links, and technologies used.
-- **Case Studies**: Concise analysis of select projects, highlighting challenges, solutions, and outcomes.
+- **Insight**: Concise analysis of selected projects, highlighting challenges, solutions, and outcomes.
 
 ### 4. Contact
 - **Social Media Links**: Links to my social media profiles for communication channels.

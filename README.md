@@ -41,3 +41,8 @@ To explore my portfolio website:
 2. Browse through various sections including Home, About, Projects, and Contacts.
 3. Feel free to reach out to me through the contact platforms I provided.
 
+
+## Reference
+
+- [webdecoded](https://www.youtube.com/@webdecoded)
+- [GIF](https://www.behance.net/gallery/73116977/Minimalism-%28Gifs-set%29)

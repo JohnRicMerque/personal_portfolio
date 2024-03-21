@@ -11,11 +11,10 @@ import Footer from  './Footer'
 const HeroSection = () => {
   return (
     <section className='min-h-screen grid place-items-center relative'>
-        <div className='lg:py-20 py-0 lg:px-14 px-4 flex align-middle mt-8' >
+        <div className='lg:py-20 py-0 lg:px-14 px-4 flex align-middle mt-0 md:mt-8' >
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-900 to-transparent rounded-full h-96 w-96 z-0 blur-lg absolute top-3/4 -right-96 transform -translate-x-1/2 -translate-y-1/2"></div>
             <div className="grid grid-cols-1 sm:grid-cols-12 place-items-center w-full">
-        
-                <div className="col-span-4 place-self-center mt-4 lg:mt-0">
+                <div className="col-span-4 place-self-center mt-2 sm:mt-0">
                     <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
                         {/* <Image
                           src="/images/about-me.png"
@@ -36,7 +35,7 @@ const HeroSection = () => {
                   initial={{opacity: 0}}
                   animate={{opacity: 1}}
                   transition={{duration: 0.3}}
-                  className="col-span-8 place-self-center sm:text-left justify-self-start">
+                  className="col-span-8 place-self-center sm:text-left justify-self-start mt-4">
                     <h1 className="text-white mb-2 text-4xl sm:text-5xl lg:text-6xl font-extrabold"><span className="text-transparent bg-clip-text bg-gradient-to-br from-green-500 to-green-300">Hi, I'm{""}</span>
                     <br />
                     <TypeAnimation
@@ -54,7 +53,7 @@ const HeroSection = () => {
                         repeat={Infinity}
                     />
                     </h1>
-                    <p className="text-[#ADB7BE] text-sm sm:text-base mb-4 lg:text-xl">
+                    <p className="text-[#ADB7BE] text-xs sm:text-base mb-4 lg:text-xl">
                         I enjoy learning and building valuable technology.
                     </p>
                     <div className="">

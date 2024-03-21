@@ -10,9 +10,9 @@ import { motion } from 'framer-motion-3d'
 export default function index() {
 
     return (
-        <div className="">
-            <div className="h-[400px]">
-            <Canvas style={{ height: "400px" }}>
+        <div className="h-full">
+            <div className="h-[100%]">
+            <Canvas style={{ height: "100%" }}>
                 <OrbitControls enableZoom={false} enablePan={false}/>
                 <ambientLight intensity={1}/>
                 <directionalLight position={[2, 1, 1]}/>

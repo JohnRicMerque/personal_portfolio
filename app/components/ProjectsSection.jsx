@@ -75,7 +75,17 @@ const projectData = [
       gitUrl: "https://github.com/JohnRicMerque/personal_portfolio",
       previewUrl: "./",
       techStack: ["NextJs", "TailwindCSS", "TypeScript"],
-  },
+    },
+    {
+      id: 8,
+      title: "WHO Suicide Data Analysis",
+      description: "Data manipulation, visualization and exploratory data analysis of Philippine suicide data",
+      imgUrl: "/images/projects/whosuicide.jpg",
+      tag: ["All", "Data"],
+      gitUrl: "https://github.com/JohnRicMerque/WHO-suicide-statistics-analysis",
+      previewUrl: "https://github.com/JohnRicMerque/WHO-suicide-statistics-analysis/blob/main/exploratory_data_analysis.pdf",
+      techStack: ["PySpark", "Tableau", "PostgreSQL"],
+    },
     
 ]
 

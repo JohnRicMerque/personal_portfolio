@@ -25,9 +25,6 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}
           <h6 className='text-sm font-semibold mb-1'>{title}</h6>
           <div className="flex gap-1">
             {techStack.map((technology, index) => (
-            // <p key={index}>
-            //   #{technology}
-            // </p>
             
             <div key={index}>
               <Image className='h-[15px]' src={`/images/icons/${technology}.png` } width={15} height={15} alt={technology}></Image>
@@ -36,6 +33,13 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}
           </div>
         </div>
         <p className='text-xs text-[#ADB7Be] justify-center align-middle'>{description}</p>
+        {/* <div className="flex gap-1 text-[0.5rem]">
+            {techStack.map((technology, index) => (
+            <p key={index}>
+              #{technology}
+            </p>
+            ))}
+        </div> */}
       </div>
     </div>
   );

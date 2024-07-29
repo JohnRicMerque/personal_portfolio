@@ -79,7 +79,7 @@ const projectData = [
     {
       id: 8,
       title: "WHO Suicide Data Analysis",
-      description: "Data manipulation, visualization and exploratory data analysis of Philippine suicide data",
+      description: "Exploratory data analysis of Philippine suicide data.",
       imgUrl: "/images/projects/whosuicide.jpg",
       tag: ["All", "Data"],
       gitUrl: "https://github.com/JohnRicMerque/WHO-suicide-statistics-analysis",

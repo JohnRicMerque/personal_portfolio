@@ -62,8 +62,10 @@ const HeroSection = () => {
                                 Hire Me
                             </span>
                         </button>
-                        <button className='px-6 py-3 w-full sm:w-fit rounded-xl bg-transparent hover:bg-slate-800
-                        text-white border border-white mt-3 hover:translate-y-0.5'>Resume</button>
+                        <a href="resume/John-Ric-Merque-Resume-Dev.pdf" target="_blank" rel="noopener noreferrer">
+                          <button className='px-6 py-3 w-full sm:w-fit rounded-xl bg-transparent hover:bg-slate-800
+                          text-white border border-white mt-3 hover:translate-y-0.5'>Resume</button>
+                        </a>
                     </div>
                 </motion.div>
             </div>

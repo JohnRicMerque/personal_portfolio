@@ -39,7 +39,7 @@ const projectData = [
     {
         id: 4,
         title: "H2gether",
-        description: "Android application designed to promote healthy water consumption habits.",
+        description: "Android application designed to track water consumption based on weather.",
         imgUrl: "/images/projects/h2gether.png",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",

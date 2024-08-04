@@ -43,7 +43,7 @@ const projectData = [
         imgUrl: "/images/projects/h2gether.png",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
-        previewUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app",
+        previewUrl: "https://github.com/irishmicoletcando/h2gether-mobile-app/blob/main/H2gether%20User%20Manual.pdf",
         techStack: ["Kotlin", "Firebase"],
     },
     {

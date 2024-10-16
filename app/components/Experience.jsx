@@ -22,7 +22,7 @@ const Experience = () => {
 
 
   return (
-    <div className='max-h-96 relative gap-4 grid grid-cols-2'>
+    <div className='max-h-[73vh] relative gap-4 grid grid-cols-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900'>
       <ExperienceCard
         roleName="Data Integrity Analyst Intern"
         companyName="SteedCo Incorporated"

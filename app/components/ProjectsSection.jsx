@@ -86,6 +86,16 @@ const projectData = [
       previewUrl: "https://github.com/JohnRicMerque/WHO-suicide-statistics-analysis/blob/main/exploratory_data_analysis.pdf",
       techStack: ["PySpark", "Tableau", "PostgreSQL"],
     },
+    {
+      id: 9,
+      title: "ProjectCCHAIN Mandaue City Urban Flooding Analysis",
+      description: "Identifying Mandaue City's contributing factors and risks for urban flooding.",
+      imgUrl: "/images/projects/mandaue.png",
+      tag: ["All", "Data"],
+      gitUrl: "https://github.com/JohnRicMerque/projectCCHAIN-mandaue-urban-flooding-analysis",
+      previewUrl: "https://github.com/JohnRicMerque/projectCCHAIN-mandaue-urban-flooding-analysis/blob/main/Report%20-%20Group%20Mandaue%20-%20EDA%20of%20Urban%20Flooding%20in%20Mandaue%20City_Contributing%20Factors%20and%20Risks.pdf",
+      techStack: ["PySpark", "Tableau", "PostgreSQL"],
+    },
     
 ]
 
@@ -108,7 +118,7 @@ const ProjectsSection = () => {
   }
   
   return (
-    <section id='projects' className='lg:px-14 px-4 min-h-screen'>
+    <section id='projects' className='lg:px-14 px-4 min-h-screen max-h-[90vh] overflow-y-auto scrollbar-thin scrollbar-thumb-[#181818] scrollbar-track-[#121212] dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800'>
 
       <div className='text-white flex flex-row justify-center items-center mt-10 py-6 gap-2'>
         <ProjectTag 

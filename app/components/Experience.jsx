@@ -22,13 +22,20 @@ const Experience = () => {
 
 
   return (
-    <div className='max-h-[73vh] relative gap-4 grid grid-cols-2 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900'>
+    <div className='max-h-[73vh] relative gap-4 grid grid-cols-2 overflow-y-auto scrollbar-thin scrollbar-thumb-[#181818] scrollbar-track-[#121212]'>
       <ExperienceCard
         roleName="Data Integrity Analyst Intern"
         companyName="SteedCo Incorporated"
         startDate="August 2024"
         endDate="October 2024"
         experienceActivities={experienceActivitiesSteedCo}
+      />
+      <ExperienceCard
+        roleName="Quality Assurance Engineer Intern"
+        companyName="Wizy Software Labs, Inc."
+        startDate="August 2023"
+        endDate="October 2023"
+        experienceActivities={experienceActivitiesWizy}
       />
       <ExperienceCard
         roleName="Quality Assurance Engineer Intern"

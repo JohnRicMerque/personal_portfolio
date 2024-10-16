@@ -3,7 +3,7 @@ import React from 'react'
 const Education = () => {
   return (
     <div className='max-h-96 relative gap-4 flex flex-col md:grid md:grid-cols-2'>
-      <div className='md: col-span-2 sticky top-0 p-10 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
+      <div className='md: col-span-2 sticky top-0 p-7 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
         <p className='text-sm'>Polytechnic University of the Philippines - Manila</p>
         <p className='text-xs text-slate-500'>Bachelor's Degree in Computer Engineering, 4th Year</p>
         <div className='pl-4 pt-2'>
@@ -36,7 +36,7 @@ const Education = () => {
             
         </div>
       </div>
-      <div className='sticky top-0 p-10 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
+      <div className='sticky top-0 p-7 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
         <p className='text-sm'>Romblon State University - Laboratory Science High School</p>
         <p className='text-xs text-slate-500'>STEM, Senior High School</p>
         <div className='pl-4 pt-2'>
@@ -51,7 +51,7 @@ const Education = () => {
         </div>
       </div>
 
-      <div className='sticky top-0 p-10 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
+      <div className='sticky top-0 p-7 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
         <p className='text-sm'>Looc National High School</p>
         <p className='text-xs text-slate-500'>STEP, Junior High School</p>
         <div className='pl-4 pt-2'>

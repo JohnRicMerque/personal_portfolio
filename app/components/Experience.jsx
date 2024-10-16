@@ -16,7 +16,7 @@ const Experience = () => {
     "Developed a web scraping automation tool that significantly streamlined the manual data collection process, enhancing efficiency and accuracy.",
     "Performed data mining on various airlines to extract meaningful insights.",
     "Transformed large volumes of data into structured formats.",
-    "Ensured data integrity by implementing validation checks and quality standards.",
+    "Ensured data integrity by implementing validation checks.",
     "Utilized Excel extensively for data manipulation and reporting."
   ];
 

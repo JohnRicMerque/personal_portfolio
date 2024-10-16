@@ -5,7 +5,7 @@ const Education = () => {
     <div className='max-h-96 relative gap-4 flex flex-col md:grid md:grid-cols-2'>
       <div className='md: col-span-2 sticky top-0 p-10 z-10 bg-[#18191E] border border-[#33353F] hover:shadow-lg hover:-translate-y-0.5 transition ease-in-out'>
         <p className='text-sm'>Polytechnic University of the Philippines - Manila</p>
-        <p className='text-xs text-slate-500'>Bachelor's Degree in Computer Engineering, 3rd Year</p>
+        <p className='text-xs text-slate-500'>Bachelor's Degree in Computer Engineering, 4th Year</p>
         <div className='pl-4 pt-2'>
             <div className='border-l-2 pl-4'>
                 <p className='text-xs'>
@@ -19,6 +19,7 @@ const Education = () => {
                 </p>
                 <ul className='text-xs ml-2 text-slate-400'>
                     <li>President's Lister, GWA: 1.30</li>
+                    <li>Ranked 9th as top performing student in Computer Engineering Department for the first semester</li>
                 </ul>
 
             </div>

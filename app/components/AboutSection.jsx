@@ -9,6 +9,7 @@ import { faJs, faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faRe
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 import Education from './Education'
 import Experience from './Experience'
+import Skills from './Skills'
 
 library.add(
   faJs,faHtml5, faCss3, faPython, faJava, faPhp, faFigma, faGithub, faReact, faUser,
@@ -18,47 +19,7 @@ const TAB_DATA = [
       title: "Skills",
       id: "skills",
       content: (
-        <div className='flex flex-col gap-4'>
-          <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out' >
-            <p className='text-sm mb-2 text-slate-300'>Languages</p>
-            <div className='grid md:grid-cols-8 gap-4'>
-              <FontAwesomeIcon icon={faJs} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <FontAwesomeIcon icon={faJava} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <FontAwesomeIcon icon={faPhp} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <FontAwesomeIcon icon={faHtml5} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <FontAwesomeIcon icon={faCss3} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <Image className="" src={"/images/kotlin.svg"} alt={"kotlin.svg"} width={40} height={40} />
-            </div>
-          </div>
-
-          <div className='bg-[#18191E] border border-[rgb(51,53,63)] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
-            <p className='text-sm mb-2 text-slate-300'>Web Frameworks</p>
-            <div className='grid md:grid-cols-8 gap-4'>
-              <Image className="dark:invert" src={"/images/nextjs.svg"} alt={"nextjs.svg"} width={40} height={40} />
-              <FontAwesomeIcon icon={faReact} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <Image className="" src={"/images/tailwindcss.svg"} alt={"tailwind.svg"} width={40} height={40} />
-            </div>
-          </div>
-          
-          <div className='bg-[#18191E] border border-[rgb(51,53,63)] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
-            <p className='text-sm mb-2 text-slate-300'>Data</p>
-            <div className='grid md:grid-cols-8 gap-4'>
-              <Image className="" src={"/images/sql.png"} alt={"sql.png"} width={40} height={40} />
-              <FontAwesomeIcon icon={faPython} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <Image className="" src={"/images/postgresql.svg"} alt={"postgresql.svg"} width={40} height={40} />
-            </div>
-          </div>
-          
-          <div className='bg-[#18191E] border border-[#33353F] p-4 hover:shadow-md hover:-translate-y-0.5 transition ease-in-out'>
-            <p className='text-sm mb-2 text-slate-300'>Other Tools</p>
-            <div className='grid md:grid-cols-8 gap-4'>
-              <Image className="" src={"/images/firebase.svg"} alt={"firebase.svg"} width={50} height={40} />
-              <FontAwesomeIcon icon={faGithub} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-              <FontAwesomeIcon icon={faFigma} style={{color: "#ffffff", width:"40px", height:"40px"}}/>
-            </div>
-          </div>
-        </div>
+        <Skills />
       )
     },
     {

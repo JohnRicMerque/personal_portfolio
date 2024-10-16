@@ -88,8 +88,8 @@ const projectData = [
     },
     {
       id: 9,
-      title: "ProjectCCHAIN Mandaue City Urban Flooding Analysis",
-      description: "Identifying Mandaue City's contributing factors and risks for urban flooding.",
+      title: "Mandaue City Flooding Analysis",
+      description: "Utilizing project CCHAIN dataset to identify Mandaue City's contributing factors and risks for urban flooding.",
       imgUrl: "/images/projects/mandaue.png",
       tag: ["All", "Data"],
       gitUrl: "https://github.com/JohnRicMerque/projectCCHAIN-mandaue-urban-flooding-analysis",
@@ -118,7 +118,7 @@ const ProjectsSection = () => {
   }
   
   return (
-    <section id='projects' className='lg:px-14 px-4 min-h-screen max-h-[90vh] overflow-y-auto scrollbar-thin scrollbar-thumb-[#181818] scrollbar-track-[#121212] dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800'>
+    <section id='projects' className='lg:px-14 px-4 pb-5 min-h-screen max-h-[90vh] overflow-y-auto scrollbar-thin scrollbar-thumb-[#181818] scrollbar-track-[#121212] dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800'>
 
       <div className='text-white flex flex-row justify-center items-center mt-10 py-6 gap-2'>
         <ProjectTag 
@@ -147,7 +147,7 @@ const ProjectsSection = () => {
             isSelected={tag === "Others"} 
         />
       </div>
-      <ul ref={ref} className='grid grid-cols-2 lg:grid-cols-4'>
+      <ul ref={ref} className='grid grid-cols-2 lg:grid-cols-4 gap-2'>
         {filteredProjects.map((project, index) => (
             <motion.li
               key={index} 

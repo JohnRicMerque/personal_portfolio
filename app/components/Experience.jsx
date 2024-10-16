@@ -37,13 +37,6 @@ const Experience = () => {
         endDate="October 2023"
         experienceActivities={experienceActivitiesWizy}
       />
-      <ExperienceCard
-        roleName="Quality Assurance Engineer Intern"
-        companyName="Wizy Software Labs, Inc."
-        startDate="August 2023"
-        endDate="October 2023"
-        experienceActivities={experienceActivitiesWizy}
-      />
     </div>
   );
 };

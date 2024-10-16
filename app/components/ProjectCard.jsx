@@ -23,7 +23,7 @@ const ProjectCard = ({imgUrl, title, description, gitUrl, previewUrl, techStack}
             </Link>
         </div>
       </div>
-      <div className="text-white hover: hover:text-green-200 bg-[#181818] py-3 px-4 min-h-20">
+      <div className="text-white hover: hover:text-green-200 bg-[#181818] py-3 px-4 min-h-24">
         <div className="flex justify-between">
           <h6 className='text-sm font-semibold mb-1'>{title}</h6>
           <div className="flex gap-1">
